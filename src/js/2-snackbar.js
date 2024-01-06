@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             reject(delay);
           }, delay);
         }
+        form.reset();
       });
 
       iziToast.success({
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         message: `✅ Fulfilled promise in ${result}ms`,
         position: 'topRight'
       });
+
     } catch (error) {
       iziToast.error({
         title: 'Error',
