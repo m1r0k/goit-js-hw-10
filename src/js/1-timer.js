@@ -15,6 +15,7 @@ let countdownInterval;
 datetimePicker.flatpickr({
   enableTime: true,
   time_24hr: true,
+  defaultDate: new Date,
   minuteIncrement: 1,
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
