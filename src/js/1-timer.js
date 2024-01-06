@@ -45,7 +45,7 @@ function updateTimerDisplay(time) {
 
 function startCountdown(targetDate) {
   clearInterval(countdownInterval);
-  datetimePicker._flatpickr.disabled = true;
+  datetimePicker.disabled = true
 
   countdownInterval = setInterval(() => {
     const now = new Date();
